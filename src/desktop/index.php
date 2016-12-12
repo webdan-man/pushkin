@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta id="viewport" name="viewport" content="width=device-width">
         <title>Ресторан авторской кухни</title>
-        <meta content="ru" http-equiv="content-language">
         <meta name="description" content="Ресторан авторской кухни">
         <meta name="Keywords" content="куда пойти казань,вкусная еда,русская кухня,банкет казань,бизнес ланч,поесть в обед">
         <meta content="website" property="og:type">
@@ -384,7 +383,7 @@
                 <a class="next" href="javascript:void(0)"></a>
             </div>
         </section>
-        <section class="map" id="contakt">
+        <section class="mapa" id="contakt">
             <div class="mapt">
                 <h2>Контакты</h2>
                 <p>Ресторан находится по адресу ул. Пушкина 54/1, 2 этаж.
@@ -401,9 +400,10 @@
             <div>
                 <h2>Работа у нас</h2>
                 <p>Присылайте ваши резюме на
-                    <a class="mail" href="mailto:work@pushkin.ru">work@pushkin.ru</a>
+                    <a class="mail" href="mailto:work@pushkin.ru">work@pushkin.ru</a> или звоните по номеру
+                    <a href="tel:+78432784848">+7 843 278 48 48</a>
                 </p>
-                <a class="btn" href="javascript:void(0)">Остались вопросы?</a>
+                <!--a class="btn" href="javascript:void(0)">Остались вопросы?</a-->
             </div>
         </section>
         <div id="hidden-box">

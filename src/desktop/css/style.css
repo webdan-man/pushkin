@@ -1128,12 +1128,12 @@ section > div {
     background-image : url(../img/next_h.png);
 }
 
-.map {
+.mapa {
     height : 800px;
     position : relative;
     padding-top : 103px;
 }
-.map:before {
+.mapa:before {
     content : '';
     position : absolute;
     top : 0;
@@ -1143,19 +1143,19 @@ section > div {
     background-image : linear-gradient(180deg, white 0%, transparent 100%), linear-gradient(180deg, white 0%, transparent 100%), linear-gradient(180deg, white 0%, transparent 100%);
     z-index : 4;
 }
-.map .mapt {
+.mapa .mapt {
     position : relative;
     z-index : 4;
     height : auto;
 }
-.map h2 {
+.mapa h2 {
     color : #caa646;
     font-size : 40px;
     font-weight : 400;
     line-height : 64px;
     letter-spacing : -1.6px;
 }
-.map p {
+.mapa p {
     color : #777;
     font-size : 18px;
     line-height : 30px;
@@ -1163,7 +1163,7 @@ section > div {
     letter-spacing : -0.6px;
     position : relative;
 }
-.map p:after {
+.mapa p:after {
     content : '';
     position : absolute;
     width : 40px;
@@ -1173,10 +1173,10 @@ section > div {
     margin-left : -20px;
     bottom : -23px;
 }
-.map .block {
+.mapa .block {
     margin-top : 28px;
 }
-.map .fone {
+.mapa .fone {
     color : #333;
     font-size : 45px;
     line-height : 72px;
@@ -1184,12 +1184,12 @@ section > div {
     letter-spacing : -1.7px;
     transition : all 0.25s;
 }
-.map .fone:hover,
-.map .fone:active,
-.map .fone.active {
+.mapa .fone:hover,
+.mapa .fone:active,
+.mapa .fone.active {
     transition : all 0.25s;
 }
-.map .btn {
+.mapa .btn {
     color : #333;
     font-size : 16px;
     line-height : 26px;
@@ -1202,17 +1202,17 @@ section > div {
     letter-spacing : -0.6px;
     transition : all 0.25s;
 }
-.map .btn:hover,
-.map .btn:active,
-.map .btn.active {
+.mapa .btn:hover,
+.mapa .btn:active,
+.mapa .btn.active {
     transition : all 0.25s;
 }
-.map .btn:hover,
-.map .btn:active,
-.map .btn.active {
+.mapa .btn:hover,
+.mapa .btn:active,
+.mapa .btn.active {
     background-image : url(../img/bron_h.png);
 }
-.map .point {
+.mapa .point {
     background-image : url(../img/point.png);
     width : 44px;
     height : 60px;
@@ -1221,7 +1221,7 @@ section > div {
     left : 50%;
     margin-left : -22px;
 }
-.map #map {
+.mapa #map {
     position : absolute;
     z-index : 3;
     top : 0;
