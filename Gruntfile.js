@@ -309,6 +309,13 @@ module.exports = function(grunt) {
                 src: '*.*',
                 dest: 'dist/',
             },
+            desktop_valueble: {
+                expand: true,
+                flatten: true,
+                cwd: 'src/desktop/downloads/',
+                src: '**',
+                dest: 'dist/downloads/',
+            },
             desktop_httaccess: {
                 expand: true,
                 flatten: true,
@@ -1349,6 +1356,7 @@ if(!mobile&&!tablet&&adaptive){
         'clean:desktop', //Удаление src/desktop/index_fc.html,src/desktop/css/bp,src/desktop/css/ap,src/desktop/js/bp
         'copy:desktop_fonts',
         'copy:desktop_fonts_css',
+        'copy:desktop_valueble',
         'copy:desktop_index', //Копирование src/desktop/*.* в dist/
         'copy:desktop_httaccess', //Копирование src/desktop/.httaccess в dist/
         'copy:desktop_ajax', //Копирование src/desktop/ajax/ в dist/ajax/
