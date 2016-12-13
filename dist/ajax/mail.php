@@ -2,6 +2,8 @@
 $frm = $_POST['frmid'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$time = $_POST['time'];
+$smoke = $_POST['smoke'];
 
 $utm_source = $_POST['utm_source'];
 $utm_medium = $_POST['utm_medium'];
@@ -31,6 +33,8 @@ $to = "i.const.yank@gmail.com";
 $message = "Форма: $frm\n\n";
 $message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n\n";
+$message .= "Время: $time\n";
+$message .= "Зона: $smoke\n\n";
 $message .= "Источник: $utm_source\n";
 $message .= "Тип источника: $utm_medium\n";
 $message .= "Кампания: $utm_campaign\n";

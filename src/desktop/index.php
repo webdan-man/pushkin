@@ -23,7 +23,7 @@
         <?php include('../track/head.php'); ?>
     </head>
     <body>
-        <div id="maket"></div>
+        <!--<div id="maket"></div>-->
         <div class="header">
             <div>
                 <a class="log" href="javascript:void(0)"></a>
@@ -66,7 +66,7 @@
                 <div class="block">
                     <a class="fone" href="tel:+78432784848">+7 843 278 48 48</a>
                 </div>
-                <a class="btn" href="javascript:void(0)">Забронировать столик</a>
+                <a class="btn btn_zz" href="#">Забронировать столик</a>
                 <div class="info">
                     <p>г. Казань, ул. Пушкина, 54</p>
                     <span></span>
@@ -79,29 +79,19 @@
             <div class="slidw">
                 <div class="slider" id="sld1">
                     <div class="slid slid1">
-                        <p class="opis">Трубочки со вкусом
-                            <br>бородинского хлеба с муссом
-                            <br>из шпрот</p>
+                        <p class="opis">Паштет из утиных сердец <br>и виноградом</p>
                     </div>
-                    <div class="slid slid1">
-                        <p class="opis">Трубочки со вкусом
-                            <br>бородинского хлеба с муссом
-                            <br>из шпрот</p>
+                    <div class="slid slid2">
+                        <p class="opis">Пирожки с утиным мясом</p>
                     </div>
-                    <div class="slid slid1">
-                        <p class="opis">Трубочки со вкусом
-                            <br>бородинского хлеба с муссом
-                            <br>из шпрот</p>
+                    <div class="slid slid3">
+                        <p class="opis">Пти тим с говяжим языком <br>и жемчугом из азота</p>
                     </div>
-                    <div class="slid slid1">
-                        <p class="opis">Трубочки со вкусом
-                            <br>бородинского хлеба с муссом
-                            <br>из шпрот</p>
+                    <div class="slid slid4">
+                        <p class="opis">Сом с полбой и нори</p>
                     </div>
-                    <div class="slid slid1">
-                        <p class="opis">Трубочки со вкусом
-                            <br>бородинского хлеба с муссом
-                            <br>из шпрот</p>
+                    <div class="slid slid5">
+                        <p class="opis">Утиная грудка <br>с лавандовой перловкой</p>
                     </div>
                 </div>
                 <a class="prev" href="javascript:void(0)"></a>
@@ -120,27 +110,31 @@
                 <div class="slider" id="sld2">
                     <div class="slid active" data-sld="0">
                         <div class="slid1 slids"></div>
-                        <p>Перловка под соусом из тыквы</p>
+                        <p>Томленая баранина с полбой</p>
                     </div>
                     <div class="slid active" data-sld="1">
                         <div class="slid2 slids"></div>
-                        <p>Перловка под соусом</p>
+                        <p>Тар тар из говяжьего сердца</p>
                     </div>
                     <div class="slid" data-sld="2">
-                        <div class="slid1 slids"></div>
-                        <p>Перловка под соусом из тыквы</p>
+                        <div class="slid3 slids"></div>
+                        <p>Тар тар из говядины с бастурмой и кремом из копченого сыра</p>
                     </div>
                     <div class="slid" data-sld="3">
-                        <div class="slid2 slids"></div>
-                        <p>Перловка под соусом</p>
+                        <div class="slid4 slids"></div>
+                        <p>Медальоны из говядины с корнеплодом</p>
                     </div>
                     <div class="slid" data-sld="4">
-                        <div class="slid1 slids"></div>
-                        <p>Перловка под соусом из тыквы</p>
+                        <div class="slid5 slids"></div>
+                        <p>Ганаш из молочного шоколада с вишней</p>
                     </div>
                     <div class="slid" data-sld="5">
-                        <div class="slid2 slids"></div>
-                        <p>Перловка под соусом</p>
+                        <div class="slid6 slids"></div>
+                        <p>Фирменный коктейль</p>
+                    </div>
+                    <div class="slid" data-sld="6">
+                        <div class="slid7 slids"></div>
+                        <p>4 шота братья Дантесса</p>
                     </div>
                 </div>
                 <div class="prev" id="prev_s2"></div>
@@ -181,9 +175,9 @@
                 <h2>Меню</h2>
                 <p>Ресторан Лаунж бар «Пушкин» создан, как место современной авторской кухни.</p>
                 <div class="block">
-                    <a class="btn_menu" href="javascript:void(0)">Меню</a>
-                    <a class="btn_vino" href="javascript:void(0)">Карта вин</a>
-                    <a class="btn_child" href="javascript:void(0)">Детское меню</a>
+                    <a class="btn_menu" href="downloads/menu.pdf" target="_blank">Меню</a>
+                    <a class="btn_vino" href="downloads/bar.pdf" target="_blank">Карта вин</a>
+                    <a class="btn_child" href="downloads/menu_child.pdf" target="_blank">Детское меню</a>
                 </div>
             </div>
         </section>
@@ -227,14 +221,14 @@
                     <div class="slidw">
                         <div class="slider" id="sld3">
                             <div class="slid slid1"></div>
-                            <div class="slid slid1"></div>
-                            <div class="slid slid1"></div>
+                            <!--div class="slid slid1"></div>
+                            <div class="slid slid1"></div-->
                         </div>
-                        <div class="page_gr" id="pgc3">
+                        <!--div class="page_gr" id="pgc3">
                             <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
                             <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
                             <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
-                        </div>
+                        </div-->
                     </div>
                 </div>
                 <div class="block" id="sup">
@@ -266,14 +260,14 @@
                     <div class="slidw">
                         <div class="slider" id="sld4">
                             <div class="slid slid2"></div>
-                            <div class="slid slid2"></div>
-                            <div class="slid slid2"></div>
+                            <!--div class="slid slid2"></div>
+                            <div class="slid slid2"></div-->
                         </div>
-                        <div class="page_gr" id="pgc4">
+                        <!--div class="page_gr" id="pgc4">
                             <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
                             <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
                             <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
-                        </div>
+                        </div-->
                     </div>
                 </div>
                 <div class="block" id="entree">
@@ -313,16 +307,16 @@
                     <div class="slidw">
                         <div class="slider" id="sld5">
                             <div class="slid slid3"></div>
+                            <!--div class="slid slid3"></div>
                             <div class="slid slid3"></div>
-                            <div class="slid slid3"></div>
-                            <div class="slid slid3"></div>
+                            <div class="slid slid3"></div-->
                         </div>
-                        <div class="page_gr" id="pgc5">
+                        <!--div class="page_gr" id="pgc5">
                             <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
                             <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
                             <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
                             <a class="page" data-slide-index="3" href="javascript:void(0)"></a>
-                        </div>
+                        </div-->
                     </div>
                 </div>
                 <p class="pod_title">Фруктовый дым с чаем —
@@ -337,33 +331,38 @@
             </div>
             <div class="slidw">
                 <div class="slider" id="sld6">
-                    <div class="slid slid1">
+                    <div class="slid slid1 active" data-sld="0">
                         <p>
-                            <span>Четверг — коктейльный сет: 4 коктейля <br>за 800 Р.</span>
+                            <span>Понедельник – фруктовый дым 500руб</span>
                         </p>
                     </div>
-                    <div class="slid slid1">
+                    <div class="slid slid2" data-sld="1">
                         <p>
-                            <span>Четверг — коктейльный сет: 4 коктейля <br>за 800 Р.</span>
+                            <span>Вторник - мужской день. Вечерняя скидка <br>мужским компаниям 20% на все меню по еде</span>
                         </p>
                     </div>
-                    <div class="slid slid1">
+                    <div class="slid slid3" data-sld="2">
                         <p>
-                            <span>Четверг — коктейльный сет: 4 коктейля <br>за 800 Р.</span>
+                            <span>Среда - женский день. Вечерняя скидка <br>женским компаниями 25% на все меню по еде</span>
                         </p>
                     </div>
-                    <div class="slid slid1">
+                    <div class="slid slid4" data-sld="3">
                         <p>
-                            <span>Четверг — коктейльный сет: 4 коктейля <br>за 800 Р.</span>
+                            <span>Четверг - коктейльный сет: 4 коктейля <br>800 Р. </span>
                         </p>
                     </div>
-                    <div class="slid slid1">
+                    <div class="slid slid5" data-sld="4">
                         <p>
-                            <span>Четверг — коктейльный сет: 4 коктейля <br>за 800 Р.</span>
+                            <span>Пятничное сет меню - несколько новых блюд за 1200-1500р, <br>а именно: 3 холодные закуски, 1 горячая закуска, горячее блюдо на выбор, десерт и <br>комплимент от шефа. Программу и цену сета уточнять у администратора по телефону 278-48-48. </span>
+                        </p>
+                    </div>
+                    <div class="slid slid6" data-sld="5">
+                        <p>
+                            <span>Воскресенье - детский день. Детское меню <br>и аниматор с 13:00 до 16:00. Подходящее фото будет <br>у меня в воскресенье, смогу тебе предоставить.</span>
                         </p>
                     </div>
                 </div>
-                <span class="page_gr" id="pgc6">1/5</span>
+                <span class="page_gr" id="pgc6">1/6</span>
                 <a class="prev" href="javascript:void(0)"></a>
                 <a class="next" href="javascript:void(0)"></a>
             </div>
@@ -375,9 +374,14 @@
             </div>
             <div class="slidw">
                 <div class="slider" id="sld7">
-                    <div class="slid slid1"></div>
-                    <div class="slid slid1"></div>
-                    <div class="slid slid1"></div>
+                    <div class="slid slid1 active" data-sld="0"></div>
+                    <div class="slid slid2" data-sld="1"></div>
+                    <div class="slid slid3" data-sld="2"></div>
+                    <div class="slid slid4" data-sld="3"></div>
+                    <div class="slid slid5" data-sld="4"></div>
+                    <div class="slid slid6" data-sld="5"></div>
+                    <div class="slid slid7" data-sld="6"></div>
+                    <div class="slid slid8" data-sld="7"></div>
                 </div>
                 <a class="prev" href="javascript:void(0)"></a>
                 <a class="next" href="javascript:void(0)"></a>
@@ -391,7 +395,7 @@
                 <div class="block">
                     <a class="fone" href="tel:+78432784848">+7 843 278 48 48</a>
                 </div>
-                <a class="btn" href="javascript:void(0)">Забронировать столик</a>
+                <a class="btn btn_zz" href="javascript:void(0)">Забронировать столик</a>
                 <!--div class="point"></div-->
             </div>
             <div id="map"></div>
@@ -400,8 +404,8 @@
             <div>
                 <h2>Работа у нас</h2>
                 <p>Присылайте ваши резюме на
-                    <a class="mail" href="mailto:work@pushkin.ru">work@pushkin.ru</a> или звоните по номеру
-                    <a href="tel:+78432784848">+7 843 278 48 48</a>
+                    <a class="mail" href="mailto:work@pushkin.ru">work@pushkin.ru</a> <br>или звоните по номеру
+                    <a class="fone" href="tel:+78432784848">+7 843 278 48 48</a>
                 </p>
                 <!--a class="btn" href="javascript:void(0)">Остались вопросы?</a-->
             </div>
@@ -416,21 +420,25 @@
                     <input name="email" type="text" placeholder="Email">
                     <div class="input">
                         <span class="placeholder_p">Удобное время</span>
-                        <input class="mail1 valid" name="mail_p1" data-input-type="mailh1" type="text" placeholder="20">
+                        <input class="mail1" id="timet" type="text" placeholder="20:00">
+                        <!--<input class="mail1 valid" name="mail_p1" data-input-type="mailh1" type="text" placeholder="20">
                         <span class="span">:</span>
                         <input class="mail2 valid" name="mail_p2" data-input-type="mailh2" type="text" placeholder="00">
-                        <input class="hid-valid" name="email" type="hidden">
+                        -->
                     </div>
+                    <input class="time-valid" name="time" type="hidden" value>
                     <div class="block">
                         <div class="chek">
-                            <a class="active" href="javascript:void(0)"></a>
+                            <a data-event="Курящая зона" href="javascript:void(0)"></a>
                             <span>Курящая <br>зона</span>
                         </div>
                         <div class="chek">
-                            <a href="javascript:void(0)"></a>
+                            <a class="active" data-event="Некурящая зона" href="javascript:void(0)"></a>
                             <span>Некурящая <br>зона</span>
                         </div>
                     </div>
+                    <input class="smoke-valid" name="smoke" type="hidden" value>
+                    <input name="frmid" type="hidden" value="Бронирование столика">
                     <input class="btn" type="submit" value="Забронировать столик">
                 </form>
             </div>
@@ -461,6 +469,9 @@
                         <span class="value-title" title="http://pushkinlounge.ru/"> </span>
                     </span>
                 </div>
+            </div>
+            <div id="form-error-pop">
+                <span id="form-error-text"></span>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>

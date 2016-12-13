@@ -6,6 +6,7 @@
          url('../fonts/ClearSansMedium.woff') format('woff'),
          url('../fonts/ClearSansMedium.ttf') format('truetype'),
          url('../fonts/ClearSansMedium.svg#ClearSansMedium') format('svg');
+         font-weight: 500;
 }
 @font-face {
     font-family: 'ClearSans';
@@ -15,6 +16,7 @@
          url('../fonts/ClearSansThin.woff') format('woff'),
          url('../fonts/ClearSansThin.ttf') format('truetype'),
          url('../fonts/ClearSansThin.svg#ClearSansThin') format('svg');
+         font-weight: 100;
 }
 @font-face {
     font-family: 'ClearSans';
@@ -24,4 +26,5 @@
          url('../fonts/ClearSansRegular.woff') format('woff'),
          url('../fonts/ClearSansRegular.ttf') format('truetype'),
          url('../fonts/ClearSansRegular.svg#ClearSansRegular') format('svg');
+         font-weight: 400;
 }
