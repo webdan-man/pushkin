@@ -32,10 +32,15 @@ $(document).ready(function() {
 
     //popap
 
-    $('.btn_zz, .table').click(function(e) {
+    $('.btn_zz').click(function(e) {
+        e.preventDefault();
+        $('#pop').arcticmodal();
+    });
+
+    $('.table').click(function(e) {
         e.preventDefault();
         $('#sps').arcticmodal('close');
-        $('#pop').arcticmodal();        
+        $('#pop').arcticmodal();
     });
     $('.close').click(function() {
         $(this).parent().arcticmodal('close');
