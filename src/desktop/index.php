@@ -75,6 +75,8 @@
                     <a class="facebook" href="https://m.facebook.com/Ресторан-Пушкин-Лаунж-363237457344177/?ref=bookmarks"></a>
                 </div>
                 <a class="mause mena" href="#about"></a>
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
             </div>
             <div class="slidw">
                 <div class="slider" id="sld1">
@@ -94,8 +96,6 @@
                         <p class="opis">Утиная грудка <br>с лавандовой перловкой</p>
                     </div>
                 </div>
-                <a class="prev" href="javascript:void(0)"></a>
-                <a class="next" href="javascript:void(0)"></a>
             </div>
         </section>
         <section class="sec2" id="about">
@@ -106,7 +106,7 @@
                     <br>«Тыква в трех текстурах» или «Паштет из утиных сердец», незабываемый
                     <br>вкус которых Вы сможете оценить в ресторане лаунж баре «Пушкин».</p>
             </div>
-            <div class="slidw">
+            <div class="slidw desk">
                 <div class="slider" id="sld2">
                     <div class="slid active" data-sld="0">
                         <div class="slid1 slids"></div>
@@ -137,8 +137,42 @@
                         <p>4 шота братья Дантесса</p>
                     </div>
                 </div>
-                <div class="prev" id="prev_s2"></div>
-                <div class="next" id="next_s2"></div>
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+            <div class="slidw mobi">
+                <div class="slider" id="sld2">
+                    <div class="slid active" data-sld="0">
+                        <div class="slid1 slids"></div>
+                        <p>Томленая баранина с полбой</p>
+                    </div>
+                    <div class="slid active" data-sld="1">
+                        <div class="slid2 slids"></div>
+                        <p>Тар тар из говяжьего сердца</p>
+                    </div>
+                    <div class="slid" data-sld="2">
+                        <div class="slid3 slids"></div>
+                        <p>Тар тар из говядины с бастурмой и кремом из копченого сыра</p>
+                    </div>
+                    <div class="slid" data-sld="3">
+                        <div class="slid4 slids"></div>
+                        <p>Медальоны из говядины с корнеплодом</p>
+                    </div>
+                    <div class="slid" data-sld="4">
+                        <div class="slid5 slids"></div>
+                        <p>Ганаш из молочного шоколада с вишней</p>
+                    </div>
+                    <div class="slid" data-sld="5">
+                        <div class="slid6 slids"></div>
+                        <p>Фирменный коктейль</p>
+                    </div>
+                    <div class="slid" data-sld="6">
+                        <div class="slid7 slids"></div>
+                        <p>4 шота братья Дантесса</p>
+                    </div>
+                </div>
+                <div class="prev"></div>
+                <div class="next"></div>
             </div>
         </section>
         <section class="sec3">
