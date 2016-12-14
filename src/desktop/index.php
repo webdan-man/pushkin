@@ -26,7 +26,8 @@
         <!--<div id="maket"></div>-->
         <div class="header">
             <div>
-                <a class="log" href="javascript:void(0)"></a>
+                <a class="btn_menum" href="#"></a>
+                <a class="log" href="#sec1"></a>
                 <ul class="menu">
                     <li>
                         <a class="mena" href="#about">О РЕСТОРАНЕ</a>
@@ -59,10 +60,10 @@
                 <a class="fone" href="tel:">+7 843 278 48 48</a>
             </div>
         </div>
-        <section class="sec1">
+        <section class="sec1" id="sec1">
             <div>
                 <h1>Пушкин</h1>
-                <a class="logo" href="javascript:void(0)"></a>
+                <a class="logo" href="#sec1"></a>
                 <div class="block">
                     <a class="fone" href="tel:+78432784848">+7 843 278 48 48</a>
                 </div>
@@ -70,8 +71,8 @@
                 <div class="info">
                     <p>г. Казань, ул. Пушкина, 54</p>
                     <span></span>
-                    <a class="vk" href="https://www.instagram.com/pushkin_kzn/"></a>
-                    <a class="instagram" href="https://vk.com/club131324676"></a>
+                    <a class="vk" href="https://vk.com/club131324676"></a>
+                    <a class="instagram" href="https://www.instagram.com/pushkin_kzn/"></a>
                     <a class="facebook" href="https://m.facebook.com/Ресторан-Пушкин-Лаунж-363237457344177/?ref=bookmarks"></a>
                 </div>
                 <a class="mause mena" href="#about"></a>
@@ -80,19 +81,19 @@
             </div>
             <div class="slidw">
                 <div class="slider" id="sld1">
-                    <div class="slid slid1">
+                    <div class="slid slid1 active" data-sld="0">
                         <p class="opis">Паштет из утиных сердец <br>и виноградом</p>
                     </div>
-                    <div class="slid slid2">
+                    <div class="slid slid2" data-sld="1">
                         <p class="opis">Пирожки с утиным мясом</p>
                     </div>
-                    <div class="slid slid3">
+                    <div class="slid slid3" data-sld="2">
                         <p class="opis">Пти тим с говяжим языком <br>и жемчугом из азота</p>
                     </div>
-                    <div class="slid slid4">
+                    <div class="slid slid4" data-sld="3">
                         <p class="opis">Сом с полбой и нори</p>
                     </div>
-                    <div class="slid slid5">
+                    <div class="slid slid5" data-sld="4">
                         <p class="opis">Утиная грудка <br>с лавандовой перловкой</p>
                     </div>
                 </div>
@@ -107,7 +108,7 @@
                     <br>вкус которых Вы сможете оценить в ресторане лаунж баре «Пушкин».</p>
             </div>
             <div class="slidw desk">
-                <div class="slider" id="sld2">
+                <div class="slider" id="sld2d">
                     <div class="slid active" data-sld="0">
                         <div class="slid1 slids"></div>
                         <p>Томленая баранина с полбой</p>
@@ -141,12 +142,12 @@
                 <div class="next"></div>
             </div>
             <div class="slidw mobi">
-                <div class="slider" id="sld2">
+                <div class="slider" id="sld2m">
                     <div class="slid active" data-sld="0">
                         <div class="slid1 slids"></div>
                         <p>Томленая баранина с полбой</p>
                     </div>
-                    <div class="slid active" data-sld="1">
+                    <div class="slid" data-sld="1">
                         <div class="slid2 slids"></div>
                         <p>Тар тар из говяжьего сердца</p>
                     </div>
@@ -230,7 +231,7 @@
                     <h3>Салаты</h3>
                     <div class="dish">
                         <p class="text">
-                            <span>Оливье с куриной <br>грудкой</span>
+                            <span>Новогодний салат</span>
                         </p>
                         <p class="cena">150 Р
                             <span>150 г</span>
@@ -246,10 +247,10 @@
                     </div>
                     <div class="dish">
                         <p class="text">
-                            <span>Оливье с куриной <br>грудкой</span>
+                            <span>Овощной с каймаком</span>
                         </p>
-                        <p class="cena">160 Р
-                            <span>135 г</span>
+                        <p class="cena">100 Р
+                            <span>150 г</span>
                         </p>
                     </div>
                     <div class="slidw">
@@ -269,15 +270,7 @@
                     <h3>Супы</h3>
                     <div class="dish">
                         <p class="text">
-                            <span>Каштановый</span>
-                        </p>
-                        <p class="cena">150 Р
-                            <span>220 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Крем-суп из цветной <br>капусты и буженины</span>
+                            <span>Суп с каштанами</span>
                         </p>
                         <p class="cena">130 Р
                             <span>250 г</span>
@@ -285,9 +278,17 @@
                     </div>
                     <div class="dish">
                         <p class="text">
-                            <span>С кораллами</span>
+                            <span>Суп с кораллами</span>
                         </p>
-                        <p class="cena">160 Р
+                        <p class="cena">130 Р
+                            <span>250 г</span>
+                        </p>
+                    </div>
+                    <div class="dish">
+                        <p class="text">
+                            <span>Крем-суп из цветной <br>капусты и буженины</span>
+                        </p>
+                        <p class="cena">150 Р
                             <span>220 г</span>
                         </p>
                     </div>
@@ -308,9 +309,17 @@
                     <h3>Основное</h3>
                     <div class="dish">
                         <p class="text">
-                            <span>Щеки говяжьи <br>с пюре</span>
+                            <span>Щеки говяжьи <br>с картофельным пюре</span>
                         </p>
                         <p class="cena">250 Р
+                            <span>250 г</span>
+                        </p>
+                    </div>
+                    <div class="dish">
+                        <p class="text">
+                            <span>Гречневая каша <br>с бычьими хвостами</span>
+                        </p>
+                        <p class="cena">180 Р
                             <span>250 г</span>
                         </p>
                     </div>
@@ -319,20 +328,12 @@
                             <span>Ньоки <br>в сливочном соусе</span>
                         </p>
                         <p class="cena">180 Р
-                            <span>250 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Гречневая каша <br>с хвостами</span>
-                        </p>
-                        <p class="cena">180 Р
                             <span>200 г</span>
                         </p>
                     </div>
                     <div class="dish">
                         <p class="text">
-                            <span>Котлета по-пожарски <br>с жареной картошкой</span>
+                            <span>Котлета по пожарски <br>с жареной картошкой</span>
                         </p>
                         <p class="cena">180 Р
                             <span>260 г</span>

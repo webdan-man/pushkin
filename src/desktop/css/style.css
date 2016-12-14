@@ -153,6 +153,22 @@ section > div {
 .header .menu a.active {
     color : #caa646;
 }
+.header .btn_menum {
+    background-image : url(../img/btn_menu.png);
+    width : 20px;
+    height : 14px;
+    position : absolute;
+    left : 1%;
+    top : 50%;
+    margin-top : -7px;
+    display : none;
+    transition : all 0.25s;
+}
+.header .btn_menum:hover,
+.header .btn_menum:active,
+.header .btn_menum.active {
+    transition : all 0.25s;
+}
 .header img {
     display : inline-block;
     vertical-align : top;
@@ -189,11 +205,11 @@ section > div {
 .sec1 h1 {
     display : none;
 }
-.sec1 .bx-wrapper {
-    height : 100% !important;
-}
 .sec1 .bx-viewport {
-    height : 100% !important;
+    height : 100%;
+}
+.sec1 .bx-wrapper {
+    height : 100%;
 }
 .sec1 .logo {
     background-image : url(../img/logo.png);
@@ -361,7 +377,10 @@ section > div {
     position : absolute;
     top : 0;
     left : 0;
-    background-color : rgba(15, 15, 30, 0.75);
+    background-color : rgba(15, 15, 30, 0.5);
+}
+.sec1 .slider .slid.active .opis {
+    visibility : visible;
 }
 .sec1 .slider .opis {
     color : #caa646;
@@ -375,6 +394,7 @@ section > div {
     font-style : italic;
     letter-spacing : 0.1px;
     height : 90px;
+    visibility : hidden;
 }
 .sec1 .slider .opis:before {
     content : '';
@@ -524,7 +544,7 @@ section > div {
 }
 .sec2 .slider .slid .slids:before {
     content : '';
-    background-color : rgba(15, 15, 30, 0.75);
+    background-color : rgba(15, 15, 30, 0.5);
     position : absolute;
     top : 0;
     left : 0;
@@ -994,7 +1014,7 @@ section > div {
     position : absolute;
     top : 0;
     left : 0;
-    background-color : rgba(15, 15, 30, 0.75);
+    background-color : rgba(15, 15, 30, 0.5);
 }
 .sec6 .slider .slid.active p {
     visibility : visible;
@@ -1024,7 +1044,6 @@ section > div {
     background-image : url(../img/slider6_slid6.jpg);
 }
 .sec6 p {
-    background-image : url(../img/news.png);
     min-width : 250px;
     min-height : 100px;
     line-height : 97px;
@@ -1170,7 +1189,7 @@ section > div {
 }
 .sec7 .slider .slid:before {
     content : '';
-    background-color : rgba(15, 15, 30, 0.75);
+    background-color : rgba(15, 15, 30, 0.5);
     position : absolute;
     top : 0;
     left : 0;
@@ -1345,7 +1364,7 @@ section > div {
 }
 
 .sec9 {
-    background : linear-gradient(180deg, rgba(15, 15, 30, 0.75) 0%, transparent 100%), url(../img/bg_sec90.jpg);
+    background : linear-gradient(180deg, rgba(15, 15, 30, 0.5) 0%, transparent 100%), url(../img/bg_sec90.jpg);
     height : 460px;
     padding-top : 103px;
     position : relative;
@@ -1357,7 +1376,7 @@ section > div {
     position : absolute;
     top : 0;
     left : 0;
-    background-color : rgba(15, 15, 30, 0.75);
+    background-color : rgba(15, 15, 30, 0.5);
 }
 .sec9 h2 {
     color : #caa646;
@@ -1790,6 +1809,8 @@ section > div {
     .header,
     section {
         min-width : 320px;
+        padding-left : 1% !important;
+        padding-right : 1% !important;
     }
     .header img {
         margin : 12px 10px 0;
@@ -1806,6 +1827,124 @@ section > div {
     }
     .mobi {
         display : inline-block;
+    }
+    .sec3 .block {
+        display : inline-block;
+        float : none;
+        width : 50%;
+    }
+    .header.h-fixed .fone {
+        padding-left : 10px;
+    }
+    .header.h-fixed .menu {
+        margin-left : 0;
+    }
+    .sec6 .prev {
+        left : 42.1%;
+    }
+    .sec6 .next {
+        right : 42.1%;
+    }
+    .sec1 .next,
+    .sec2 .next,
+    .sec7 .next {
+        right : 1%;
+    }
+    .sec1 .prev,
+    .sec2 .prev,
+    .sec7 .prev {
+        left : 1%;
+    }
+    .sec7 .slider .slid {
+        height : 565px;
+        background-size : contain;
+    }
+    .sec3 p br {
+        display : none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sec1 .btn_zz {
+        display : none;
+    }
+    .header .menu {
+        display : none;
+    }
+    .header {
+        height : 60px;
+        top : 0;
+    }
+    .header .log {
+        position : absolute;
+        background-image : url(../img/logo_m.png);
+        width : 54px;
+        height : 60px;
+        left : 50%;
+        margin-left : -27px;
+        top : 0;
+        display : none;
+    }
+    .header.h-fixed .log {
+        background-image : url(../img/logo_m.png);
+    }
+    .header.h-fixed {
+        height : 60px;
+        padding : 0;
+    }
+    .header.h-fixed .log {
+        display : inline-block;
+        float : none;
+    }
+    .btn_menum {
+        display : inline-block;
+    }
+    .sec1 {
+        background-color : #070306;
+        background-image : linear-gradient(to top, #0f0f1e 0%, transparent 100%);
+    }
+    .bx-viewport {
+        overflow : visible !important;
+    }
+    .sec1 .slider .slid {
+        -webkit-background-size : cover;
+             -o-background-size : cover;
+                background-size : cover;
+    }
+    .sec1 .slidw {
+        height : 350px;
+        top : 130px;
+    }
+    .sec1 .block {
+        margin-top : 400px;
+    }
+    .sec1 {
+        padding-top : 0;
+    }
+    .sec1 .info {
+        margin-top : 30px;
+    }
+    .sec1 .prev,
+    .sec1 .next {
+        top : 37%;
+    }
+    .sec1 .slider .opis {
+        bottom : -30px;
+        left : 0;
+        text-align : center;
+        width : 100%;
+        margin-left : 0;
+        height : 30px;
+    }
+    .sec1 .slider .opis:before {
+        content : '';
+        height : 1px;
+        top : -50px;
+        left : 32px;
+        width : 320px;
+    }
+    .sec1 .slider .opis br {
+        display : none;
     }
 }
 

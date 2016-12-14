@@ -23,12 +23,13 @@ $(document).ready(function() {
     };
 
     //скролл меню
-    $('.mena').click(function(e) {
+    $('.mena, .log, .logo').click(function(e) {
         e.preventDefault();
         $("html, body").animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 2000);
     });
+
 
     //popap
 
@@ -132,20 +133,23 @@ $(document).ready(function() {
         return re.test(email);
     };
 
+    /*
     $('input[name="email"]').blur(function() {
         if (!validateEmail($(this).val())) {
             $(this).addClass('error-input');
         }
     });
+
     $('input[name="email"]').focus(function() {
         $(this).removeClass('error-input');
     });
+    */
 
     //отправка формы
     $('form').submit(function(e) {
         e.preventDefault();
         $(this).find('input[type="text"]').trigger('blur');
-        if (!$(this).find('input[type="text"]').hasClass('error-input')) {
+        if (!$(this).find('input[type="text"]').hasClass('error-input') && $(this).find('input[name="email"]').hasClass('error-input')) {
             var type = $(this).attr('method');
             var url = $(this).attr('action');
             var data = $(this).serialize();
@@ -163,6 +167,20 @@ $(document).ready(function() {
         } else {
 
             var eror_pop_text = '';
+
+            if ($(this).find('input[name="name"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input')) {
+                eror_pop_text = 'Пожалуйста введите имя';
+            } else
+
+            if ($(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="name"]').hasClass('error-input')) {
+                eror_pop_text = 'Пожалуйста введите телефон';
+            } else
+
+            if ($(this).find('input[name="phone"]').hasClass('error-input') && $(this).find('input[name="name"]').hasClass('error-input')) {
+                eror_pop_text = 'Пожалуйста введите имя и телефон';
+            }
+
+            /*
 
             if ($(this).find('input[name="name"]').hasClass('error-input') && !$(this).find('input[name="phone"]').hasClass('error-input') && !$(this).find('input[name="email"]').hasClass('error-input')) {
                 eror_pop_text = 'Пожалуйста введите имя';
@@ -192,6 +210,8 @@ $(document).ready(function() {
                 eror_pop_text = 'Пожалуйста введите имя, телефон и почту';
             }
 
+            */
+
             $('#form-error-text').html(eror_pop_text)
             $('#form-error-pop').arcticmodal();
         }
@@ -199,14 +219,29 @@ $(document).ready(function() {
 
     //слайдери
 
-    slider1 = $('#sld1').bxSlider({
+    slider1 = $('.sec1 .slidw .slider#sld1').bxSlider({
         infiniteLoop: true,
-        pager: false,
-        pagerCustom: false,
         controls: false,
+        pager: false,
+        speed: 500,
+        pause: 10000,
         auto: true,
-        pause: 6000,
-        speed: 400
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+        onSlideNext: function($slideElement, oldIndex, newIndex) {
+            $('.sec1 .slidw .slider#sld1 .slid').removeClass('active');
+            $('.sec1 .slidw .slider#sld1 .slid[data-sld="' + newIndex + '"]').addClass('active');
+        },
+        onSlidePrev: function($slideElement, oldIndex, newIndex) {
+            $('.sec1 .slidw .slider#sld1 .slid').removeClass('active');
+            $('.sec1 .slidw .slider#sld1 .slid[data-sld="' + newIndex + '"]').addClass('active');
+        },
+        onSliderLoad: function() {
+            $('.sec1 .slidw .slider#sld1 .slid.active.bx-clone').removeClass('active');
+            $('.sec1').addClass('loaded-slider');
+        }
+
     });
     $('.sec1 .prev').click(function(e) {
         e.preventDefault();
@@ -217,7 +252,7 @@ $(document).ready(function() {
         slider1.goToNextSlide();
     });
 
-    slider2 = $('.sec2 .slidw.desk .slider#sld2').bxSlider({
+    slider2 = $('.sec2 .slidw.desk .slider#sld2d').bxSlider({
         infiniteLoop: true,
         controls: false,
         pager: false,
@@ -229,20 +264,19 @@ $(document).ready(function() {
         moveSlides: 1,
         slideWidth: 470,
         onSlideNext: function($slideElement, oldIndex, newIndex) {
-            $('.sec2 .slidw.desk .slider#sld2 .slid').removeClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid[data-sld="' + (oldIndex - 1) + '"]').removeClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid[data-sld="' + newIndex + '"]').addClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid[data-sld="' + (newIndex + 1) + '"]').addClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid.bx-clone[data-sld="' + newIndex + '"]').addClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid').removeClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid[data-sld="' + (oldIndex - 1) + '"]').removeClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid[data-sld="' + newIndex + '"]').addClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid[data-sld="' + (newIndex + 1) + '"]').addClass('active');
         },
         onSlidePrev: function($slideElement, oldIndex, newIndex) {
-            $('.sec2 .slidw.desk .slider#sld2 .slid').removeClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid[data-sld="' + oldIndex + '"]').addClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid[data-sld="' + (oldIndex + 1) + '"]').removeClass('active');
-            $('.sec2 .slidw.desk .slider#sld2 .slid[data-sld="' + newIndex + '"]').addClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid').removeClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid[data-sld="' + oldIndex + '"]').addClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid[data-sld="' + (oldIndex + 1) + '"]').removeClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid[data-sld="' + newIndex + '"]').addClass('active');
         },
         onSliderLoad: function() {
-            $('.sec2 .slidw.desk .slider#sld2 .slid.bx-clone').addClass('active');
+            $('.sec2 .slidw.desk .slider#sld2d .slid.active.bx-clone').removeClass('active');
         }
 
     });
@@ -257,7 +291,7 @@ $(document).ready(function() {
         slider2.goToNextSlide();
     });
 
-    slider2m = $('.sec2 .slidw.mobi .slider#sld2').bxSlider({
+    slider2m = $('.sec2 .slidw.mobi .slider#sld2m').bxSlider({
         infiniteLoop: true,
         controls: false,
         pager: false,
@@ -269,15 +303,15 @@ $(document).ready(function() {
         moveSlides: 1,
         slideWidth: 470,
         onSlideNext: function($slideElement, oldIndex, newIndex) {
-            $('.sec2 .slidw.mobi .slider#sld2 .slid').removeClass('active');
-            $('.sec2 .slidw.mobi .slider#sld2 .slid[data-sld="' + newIndex + '"]').addClass('active');
+            $('.sec2 .slidw.mobi .slider#sld2m .slid').removeClass('active');
+            $('.sec2 .slidw.mobi .slider#sld2m .slid[data-sld="' + newIndex + '"]').addClass('active');
         },
         onSlidePrev: function($slideElement, oldIndex, newIndex) {
-            $('.sec2 .slidw.mobi .slider#sld2 .slid').removeClass('active');
-            $('.sec2 .slidw.mobi .slider#sld2 .slid[data-sld="' + newIndex + '"]').addClass('active');
+            $('.sec2 .slidw.mobi .slider#sld2m .slid').removeClass('active');
+            $('.sec2 .slidw.mobi .slider#sld2m .slid[data-sld="' + newIndex + '"]').addClass('active');
         },
         onSliderLoad: function() {
-            $('.sec2 .slidw.mobi .slider#sld2 .slid.active.bx-clone').removeClass('active');
+            $('.sec2 .slidw.mobi .slider#sld2m .slid.active.bx-clone').removeClass('active');
         }
 
     });
@@ -338,7 +372,7 @@ $(document).ready(function() {
         pagerCustom: '#pgc6',
         pagerType: 'short',
         speed: 500,
-        pause: 6000,
+        pause: 10000,
         auto: true,
         minSlides: 1,
         maxSlides: 1,

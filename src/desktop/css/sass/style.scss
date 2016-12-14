@@ -104,6 +104,19 @@ button,input,textarea{outline: none;border: none;}
             }
         }
     }
+    .btn_menum {
+        background-image: url(../img/btn_menu.png);
+        width: 20px;
+        height: 14px;
+        position: absolute;
+        left: 1%;
+        top: 50%;
+        margin-top: -7px;
+        display: none;
+        @include trans();
+        &:hover, &:active, &.active{
+        }
+    }
     img {
         display: inline-block;
         vertical-align: top;
@@ -137,11 +150,11 @@ button,input,textarea{outline: none;border: none;}
     h1 {
         display: none;
     }
-    .bx-wrapper {
-        height: 100%!important;
-    }
     .bx-viewport {
-        height: 100%!important;
+        height: 100%;
+    }
+    .bx-wrapper {
+        height: 100%; 
     }
     .logo {
         background-image: url(../img/logo.png);
@@ -268,7 +281,12 @@ button,input,textarea{outline: none;border: none;}
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: rgba(15, 15, 30, 0.75);
+                background-color: rgba(15, 15, 30, 0.5);
+            }
+        }
+        .slid.active {
+            .opis {
+                visibility: visible;
             }
         }
         .opis {
@@ -282,7 +300,8 @@ button,input,textarea{outline: none;border: none;}
             text-align: left;
             font-style: italic;
             letter-spacing: 0.1px;
-            height: 90px;                                         
+            height: 90px;
+            visibility: hidden;                                          
             &:before{
                 content: "";
                 width: 1px;
@@ -411,7 +430,7 @@ button,input,textarea{outline: none;border: none;}
                 @include trans();
                 &:before {
                     content: "";
-                    background-color: rgba(15, 15, 30, 0.75);
+                    background-color: rgba(15, 15, 30, 0.5);
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -834,7 +853,7 @@ button,input,textarea{outline: none;border: none;}
                 position: absolute;
                 top: 0;
                 left: 0;
-                background-color: rgba(15, 15, 30, 0.75);
+                background-color: rgba(15, 15, 30, 0.5);
             }
         }
         .slid.active {
@@ -864,7 +883,7 @@ button,input,textarea{outline: none;border: none;}
     }
     
     p {
-        background-image: url(../img/news.png);
+        //background-image: url(../img/news.png);
         min-width: 250px;
         min-height: 100px;
         line-height: 97px;
@@ -980,7 +999,7 @@ button,input,textarea{outline: none;border: none;}
                 @include trans();
                 &:before {
                     content: "";
-                    background-color: rgba(15, 15, 30, 0.75);
+                    background-color: rgba(15, 15, 30, 0.5);
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -1121,7 +1140,7 @@ button,input,textarea{outline: none;border: none;}
     }
 }
 .sec9 {
-    background: linear-gradient(180deg, rgba(15, 15, 30, 0.75) 0%, transparent 100%), url(../img/bg_sec90.jpg);
+    background: linear-gradient(180deg, rgba(15, 15, 30, 0.5) 0%, transparent 100%), url(../img/bg_sec90.jpg);
     height: 460px;
     padding-top: 103px;
     position: relative;
@@ -1132,7 +1151,7 @@ button,input,textarea{outline: none;border: none;}
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(15, 15, 30, 0.75);
+        background-color: rgba(15, 15, 30, 0.5);
     }
     div {
     }
@@ -1454,11 +1473,13 @@ button,input,textarea{outline: none;border: none;}
 .mobi {
     display: none;
     width: 100%;
-}
+} 
 @media screen and (max-width:960px){
     $wievport: 100%;
     .header, section {
         min-width: 320px;
+        padding-left: 1%!important;
+        padding-right: 1%!important;
     }
     .header img {
         margin: 12px 10px 0px;
@@ -1476,9 +1497,120 @@ button,input,textarea{outline: none;border: none;}
     .mobi {
         display: inline-block;
     }
-    
+    .sec3 .block {
+        display: inline-block;
+        float: none;
+        width: 50%;
+    }
+    .header.h-fixed .fone {
+        padding-left: 10px;
+    }
+    .header.h-fixed .menu {
+        margin-left: 0px;
+    }
+    .sec6 .prev {
+        left: 42.1%;
+    }
+    .sec6 .next {
+        right: 42.1%;
+    }
+    .sec1 .next, .sec2 .next, .sec7 .next {
+        right: 1%; 
+    }
+    .sec1 .prev, .sec2 .prev, .sec7 .prev {
+        left: 1%; 
+    }
+    .sec7 .slider .slid {
+        height: 565px;
+        background-size: contain;
+    }
+    .sec3 p {
+        br {
+            display: none;
+        }
+    }
 }
 @media screen and (max-width:900px){
+    .sec1 .btn_zz {
+        display: none;
+    }
+    .header .menu {
+        display: none;
+    }
+    .header {
+        height: 60px;
+        top: 0px;
+    }
+    .header .log {
+        position: absolute;
+        background-image: url(../img/logo_m.png);
+        width: 54px;
+        height: 60px;
+        left: 50%;
+        margin-left: -27px;
+        top: 0px;
+        display: none;
+    }
+    .header.h-fixed .log {
+        background-image: url(../img/logo_m.png);
+    }
+    .header.h-fixed {
+        height: 60px;
+        padding: 0; 
+    }
+    .header.h-fixed .log {
+        display: inline-block;
+        float: none;   
+    }
+    .btn_menum {
+        display: inline-block;
+    }
+    .sec1 {
+        background-color: #070306;
+        background-image: linear-gradient(to top,#0f0f1e 0%, transparent 100%);
+    }
+    .bx-viewport {
+        overflow: visible!important;
+    }
+    .sec1 .slider .slid {
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .sec1 .slidw {
+        height: 350px;
+        top: 130px;
+    }
+    .sec1 .block {
+        margin-top: 400px;
+    }
+    .sec1 {
+        padding-top: 0px;
+    }
+    .sec1 .info {
+        margin-top: 30px; 
+    }
+    .sec1 .prev, .sec1 .next {
+        top: 37%;
+    }
+    .sec1 .slider .opis {
+        bottom: -30px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        height: 30px;                                       
+        &:before{
+            content: "";
+            height: 1px;
+            top: -50px;
+            left: 32px;
+            width: 320px;
+        }
+        br {
+            display: none;
+        }
+    }
 
 }
 @media screen and (max-width:850px){
