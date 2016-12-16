@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     //popap
 
-    $('.btn_zz').click(function(e) {
+    $('.btn_zz, .btn_zz_m').click(function(e) {
         e.preventDefault();
         $('#pop').arcticmodal();
     });
@@ -54,6 +54,23 @@ $(document).ready(function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('.smoke-valid').val($(this).data('event'));
+        }
+    });
+
+    //
+    $('.it_op').click(function(e) {
+        e.preventDefault();
+        $('.it_op').removeClass('active');
+        $(this).addClass('active');
+        $('.block_gr .block').removeClass('active');
+        if ($(this).data('it') === 'salad') {
+            $('#salad').addClass('active');
+        }
+        if ($(this).data('it') === 'sup') {
+            $('#sup').addClass('active');
+        }
+        if ($(this).data('it') === 'entree') {
+            $('#entree').addClass('active');
         }
     });
 

@@ -24,6 +24,9 @@
     </head>
     <body>
         <!--<div id="maket"></div>-->
+        <div class="pre-loader">
+            <div class="cssload-coffee"></div>
+        </div>
         <div class="header">
             <div>
                 <a class="btn_menum" href="#"></a>
@@ -57,6 +60,7 @@
                         <a class="mena" href="#unas">РАБОТА У НАС</a>
                     </li>
                 </ul>
+                <a class="btn btn_zz_m" href="javascript:void(0)">Забронировать</a>
                 <a class="fone" href="tel:">+7 843 278 48 48</a>
             </div>
         </div>
@@ -180,16 +184,10 @@
             <div>
                 <h2>БРЕНД ШЕФ</h2>
                 <div class="block">
-                    <img src="img/foto.jpg" alt height="260" width="410">
-                    <h3>
-                        <span>«</span> Мы созданы для того, <br>чтобы раздвинуть ваши <br>рамки восприятия <br>вкуса.
-                        <span>»</span>
-                    </h3>
-                </div>
-                <div class="block">
                     <h4>Сергей Фокин
                         <span>БРЕНД ШЕФ</span>
                     </h4>
+                    <img class="mobi" src="img/foto.jpg" alt height="260" width="410">
                     <p>Бренд шефом нашего ресторана является
                         <br>Сергей Фокин, входящий в состав десятки
                         <br>креативных поваров России. В меню
@@ -202,6 +200,13 @@
                         <br>кухня. В этом вы убедитесь, заказав такой
                         <br>десерт, как «nitro халва»: лакомство будет
                         <br>необычно подано самим шеф-поваром.</p>
+                </div>
+                <div class="block">
+                    <img class="desk" src="img/foto.jpg" alt height="260" width="410">
+                    <h3>
+                        <span>«</span> Мы созданы для того, <br>чтобы раздвинуть ваши <br>рамки восприятия <br>вкуса.
+                        <span>»</span>
+                    </h3>
                 </div>
             </div>
         </section>
@@ -227,131 +232,138 @@
                         <sup>00</sup>
                     </span>
                 </p>
-                <div class="block" id="salad">
-                    <h3>Салаты</h3>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Новогодний салат</span>
-                        </p>
-                        <p class="cena">150 Р
-                            <span>150 г</span>
-                        </p>
+                <div class="block_gr">
+                    <div class="btn_gr">
+                        <a class="it_op" data-it="salad" href="#">Салаты</a>
+                        <a class="it_op" data-it="sup" href="#">Супы</a>
+                        <a class="it_op active" data-it="entree" href="#">Основное</a>
                     </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Винегрет</span>
-                        </p>
-                        <p class="cena">100 Р
-                            <span>150 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Овощной с каймаком</span>
-                        </p>
-                        <p class="cena">100 Р
-                            <span>150 г</span>
-                        </p>
-                    </div>
-                    <div class="slidw">
-                        <div class="slider" id="sld3">
-                            <div class="slid slid1"></div>
-                            <!--div class="slid slid1"></div>
-                            <div class="slid slid1"></div-->
+                    <div class="block" id="salad">
+                        <h3>Салаты</h3>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Новогодний салат</span>
+                            </p>
+                            <p class="cena">150 Р
+                                <span>150 г</span>
+                            </p>
                         </div>
-                        <!--div class="page_gr" id="pgc3">
-                            <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
-                            <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
-                            <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
-                        </div-->
-                    </div>
-                </div>
-                <div class="block" id="sup">
-                    <h3>Супы</h3>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Суп с каштанами</span>
-                        </p>
-                        <p class="cena">130 Р
-                            <span>250 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Суп с кораллами</span>
-                        </p>
-                        <p class="cena">130 Р
-                            <span>250 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Крем-суп из цветной <br>капусты и буженины</span>
-                        </p>
-                        <p class="cena">150 Р
-                            <span>220 г</span>
-                        </p>
-                    </div>
-                    <div class="slidw">
-                        <div class="slider" id="sld4">
-                            <div class="slid slid2"></div>
-                            <!--div class="slid slid2"></div>
-                            <div class="slid slid2"></div-->
+                        <div class="dish">
+                            <p class="text">
+                                <span>Винегрет</span>
+                            </p>
+                            <p class="cena">100 Р
+                                <span>150 г</span>
+                            </p>
                         </div>
-                        <!--div class="page_gr" id="pgc4">
-                            <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
-                            <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
-                            <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
-                        </div-->
-                    </div>
-                </div>
-                <div class="block" id="entree">
-                    <h3>Основное</h3>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Щеки говяжьи <br>с картофельным пюре</span>
-                        </p>
-                        <p class="cena">250 Р
-                            <span>250 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Гречневая каша <br>с бычьими хвостами</span>
-                        </p>
-                        <p class="cena">180 Р
-                            <span>250 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Ньоки <br>в сливочном соусе</span>
-                        </p>
-                        <p class="cena">180 Р
-                            <span>200 г</span>
-                        </p>
-                    </div>
-                    <div class="dish">
-                        <p class="text">
-                            <span>Котлета по пожарски <br>с жареной картошкой</span>
-                        </p>
-                        <p class="cena">180 Р
-                            <span>260 г</span>
-                        </p>
-                    </div>
-                    <div class="slidw">
-                        <div class="slider" id="sld5">
-                            <div class="slid slid3"></div>
-                            <!--div class="slid slid3"></div>
-                            <div class="slid slid3"></div>
-                            <div class="slid slid3"></div-->
+                        <div class="dish">
+                            <p class="text">
+                                <span>Овощной с каймаком</span>
+                            </p>
+                            <p class="cena">100 Р
+                                <span>150 г</span>
+                            </p>
                         </div>
-                        <!--div class="page_gr" id="pgc5">
-                            <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
-                            <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
-                            <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
-                            <a class="page" data-slide-index="3" href="javascript:void(0)"></a>
-                        </div-->
+                        <div class="slidw">
+                            <div class="slider" id="sld3">
+                                <div class="slid slid1"></div>
+                                <!--div class="slid slid1"></div>
+                                <div class="slid slid1"></div-->
+                            </div>
+                            <!--div class="page_gr" id="pgc3">
+                                <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
+                                <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
+                                <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
+                            </div-->
+                        </div>
+                    </div>
+                    <div class="block" id="sup">
+                        <h3>Супы</h3>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Суп с каштанами</span>
+                            </p>
+                            <p class="cena">130 Р
+                                <span>250 г</span>
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Суп с кораллами</span>
+                            </p>
+                            <p class="cena">130 Р
+                                <span>250 г</span>
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Крем-суп из цветной <br>капусты и буженины</span>
+                            </p>
+                            <p class="cena">150 Р
+                                <span>220 г</span>
+                            </p>
+                        </div>
+                        <div class="slidw">
+                            <div class="slider" id="sld4">
+                                <div class="slid slid2"></div>
+                                <!--div class="slid slid2"></div>
+                                <div class="slid slid2"></div-->
+                            </div>
+                            <!--div class="page_gr" id="pgc4">
+                                <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
+                                <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
+                                <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
+                            </div-->
+                        </div>
+                    </div>
+                    <div class="block active" id="entree">
+                        <h3>Основное</h3>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Щеки говяжьи <br>с картофельным пюре</span>
+                            </p>
+                            <p class="cena">250 Р
+                                <span>250 г</span>
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Гречневая каша <br>с бычьими хвостами</span>
+                            </p>
+                            <p class="cena">180 Р
+                                <span>250 г</span>
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Ньоки <br>в сливочном соусе</span>
+                            </p>
+                            <p class="cena">180 Р
+                                <span>200 г</span>
+                            </p>
+                        </div>
+                        <div class="dish">
+                            <p class="text">
+                                <span>Котлета по пожарски <br>с жареной картошкой</span>
+                            </p>
+                            <p class="cena">180 Р
+                                <span>260 г</span>
+                            </p>
+                        </div>
+                        <div class="slidw">
+                            <div class="slider" id="sld5">
+                                <div class="slid slid3"></div>
+                                <!--div class="slid slid3"></div>
+                                <div class="slid slid3"></div>
+                                <div class="slid slid3"></div-->
+                            </div>
+                            <!--div class="page_gr" id="pgc5">
+                                <a class="page" data-slide-index="0" href="javascript:void(0)"></a>
+                                <a class="page active" data-slide-index="1" href="javascript:void(0)"></a>
+                                <a class="page" data-slide-index="2" href="javascript:void(0)"></a>
+                                <a class="page" data-slide-index="3" href="javascript:void(0)"></a>
+                            </div-->
+                        </div>
                     </div>
                 </div>
                 <p class="pod_title">Фруктовый дым с чаем —
@@ -439,12 +451,41 @@
             <div>
                 <h2>Работа у нас</h2>
                 <p>Присылайте ваши резюме на
-                    <a class="mail" href="mailto:work@pushkin.ru">work@pushkin.ru</a> <br>или звоните по номеру
+                    <a class="mail" href="mailto:work_pushkin@mail.ru">work_pushkin@mail.ru</a> <br>или звоните по номеру
                     <a class="fone" href="tel:+78432784848">+7 843 278 48 48</a>
                 </p>
                 <!--a class="btn" href="javascript:void(0)">Остались вопросы?</a-->
             </div>
         </section>
+        <a class="btn_menumob" href="#"></a>
+        <div class="menu_open">
+            <a class="close" href="javascript:void(0)"></a>
+            <a class="log" href="#sec1"></a>
+            <ul class="menu">
+                <li>
+                    <a class="mena" href="#about">О РЕСТОРАНЕ</a>
+                </li>
+                <li>
+                    <a class="mena" href="#menu">МЕНЮ</a>
+                </li>
+                <li>
+                    <a class="mena" href="#biznes">БИЗНЕС-ЛАНЧИ</a>
+                </li>
+                <li>
+                    <a class="mena" href="#galery">ГАЛЕРЕЯ</a>
+                </li>
+                <li>
+                    <a class="mena" href="#news">НОВОСТИ</a>
+                </li>
+                <li>
+                    <a class="mena" href="#contakt">КОНТАКТЫ</a>
+                </li>
+                <li>
+                    <a class="mena" href="#unas">РАБОТА У НАС</a>
+                </li>
+            </ul>
+            <a class="btn btn_zz_mobi" href="javascript:void(0)">Забронировать толик</a>
+        </div>
         <div id="hidden-box">
             <div class="popap" id="pop">
                 <a class="close" href="javascript:void(0)"></a>
