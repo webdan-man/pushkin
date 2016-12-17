@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     //popap
 
-    $('.btn_zz, .btn_zz_m').click(function(e) {
+    $('.btn_zz, .btn_zz_m, .btn_zz_mobi').click(function(e) {
         e.preventDefault();
         $('#pop').arcticmodal();
     });
@@ -72,6 +72,32 @@ $(document).ready(function() {
         if ($(this).data('it') === 'entree') {
             $('#entree').addClass('active');
         }
+    });
+
+    //menu
+    var menu_active = 0;
+    $('.btn_menumob').click(function(e) {
+        e.preventDefault();
+        if (!$('.menu_open').hasClass('active')) {
+            $('.menu_open').addClass('active');
+            //$('.btn_menumob').addClass('men_btn_h');
+            menu_active = 1;
+        } else {
+            $('.menu_open').removeClass('active');
+            //$('.btn_menumob').removeClass('men_btn_h');
+            menu_active = 0;
+        }
+    });
+    $('.menu .mena, .log, .btn_zz_mobi').click(function(e) {
+        e.preventDefault();
+        $('.menu_open').removeClass('active');
+        //$('.btn_menumob').removeClass('men_btn_h');
+        menu_active = 0;
+    });
+    $('.menu_open .close_m').click(function(e) {
+        e.preventDefault();
+        $('.menu_open').removeClass('active');
+        //$('.btn_menumob').removeClass('men_btn_h');
     });
 
     //гео, валидация
@@ -166,7 +192,7 @@ $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
         $(this).find('input[type="text"]').trigger('blur');
-        if (!$(this).find('input[type="text"]').hasClass('error-input') && $(this).find('input[name="email"]').hasClass('error-input')) {
+        if (!$(this).find('input[type="text"]').hasClass('error-input')) {
             var type = $(this).attr('method');
             var url = $(this).attr('action');
             var data = $(this).serialize();

@@ -23,7 +23,7 @@
         <?php include('../track/head.php'); ?>
     </head>
     <body>
-        <!--<div id="maket"></div>-->
+        <!--div id="maket"></div-->
         <div class="pre-loader">
             <div class="cssload-coffee"></div>
         </div>
@@ -459,7 +459,7 @@
         </section>
         <a class="btn_menumob" href="#"></a>
         <div class="menu_open">
-            <a class="close" href="javascript:void(0)"></a>
+            <a class="close_m" href="javascript:void(0)"></a>
             <a class="log" href="#sec1"></a>
             <ul class="menu">
                 <li>
