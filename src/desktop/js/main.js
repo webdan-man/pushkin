@@ -415,7 +415,7 @@ $(document).ready(function() {
         pagerCustom: '#pgc6',
         pagerType: 'short',
         speed: 500,
-        pause: 10000,
+        pause: 20000,
         auto: true,
         minSlides: 1,
         maxSlides: 1,
